@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'kotlin-android'
+    id 'maven-publish'
 }
 
 android {
@@ -45,3 +46,21 @@ dependencies {
     // lifecycle (for AutoClearedValue)
     implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
 }
+
+//afterEvaluate {
+//    publishing {
+//        publications {
+//            // Creates a Maven publication called "release".
+//            release(MavenPublication) {
+//                // Applies the component for the release build variant.
+//                from components.release
+//
+//                // You can then customize attributes of the publication as shown below.
+//                groupId = 'com.dennisroters'
+//                artifactId = 'android_utils'
+//                version = '1.0.0'
+//            }
+//
+//        }
+//    }
+//}
